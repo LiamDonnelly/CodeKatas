@@ -11,11 +11,23 @@ namespace ReverseString
         public string Reverse(string s)
         {
             char[] arrayOfString = s.ToArray();
-
-            Array.Reverse(arrayOfString);
             
+            Array.Reverse(arrayOfString);
+
             return new string(arrayOfString);
 
+            /*
+                Another method without the use of System Array library
+                char[] newArray = new char[s.Length];
+
+                for (int i = 0; i < s.Length; i++)
+                {
+                    newArray[i] = arrayOfString[s.Length - 1 - i];
+                }
+                
+                return new string(newArray);
+            */
+            
             throw new NotImplementedException();
         }
     }
