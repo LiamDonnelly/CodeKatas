@@ -10,6 +10,12 @@ namespace ReverseString
     {
         public string Reverse(string s)
         {
+            char[] arrayOfString = s.ToArray();
+
+            Array.Reverse(arrayOfString);
+            
+            return new string(arrayOfString);
+
             throw new NotImplementedException();
         }
     }
