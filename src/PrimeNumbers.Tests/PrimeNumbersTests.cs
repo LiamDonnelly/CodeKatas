@@ -26,5 +26,19 @@ namespace PrimeNumbers.Tests
             var result = primeNumbers.GetNextPrimeNumber(1);
             Assert.AreEqual(0, result);
         }
+
+        [TestMethod]
+        public void TestMethod7()
+        {
+            var result = primeNumbers.GetNextPrimeNumber(11);
+            Assert.AreEqual(13, result);
+        }
+
+        [TestMethod]
+        public void TestMethod269()
+        {
+            var result = primeNumbers.GetNextPrimeNumber(269);
+            Assert.AreEqual(271, result);
+        }
     }
 }
